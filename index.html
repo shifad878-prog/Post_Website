@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow sticky-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fw-bold" href="#">Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Single Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Create Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">My Posts</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="./login.html"><button class="btn btn-outline-warning text-black"
+                            type="submit">Login</button></a>
+                    <a href="./signup.html"><button class="btn btn-warning text-black" type="submit">SignUp</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- MY BLOG -->
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-12 ">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">🌍 Discover the Beauty of the World</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">Explore breathtaking landscapes, beautiful cities, and amazing
+                            destinations that make our planet unique.Find travel inspiration, hidden gems, and
+                            unforgettable experiences from different corners of the world.
+                            Discover diverse traditions,
+                            together</p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-md-block w-100"
+                        data-src="holder.js/200x250?theme=thumb" alt="Thumbnail" src="./images/blog.jpg"
+                        data-holder-rendered="true" style="width: 300px; height: 250px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+<!-- links  -->
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="./bootstrap.js"></script>
+<script src="./js/app.js"></script>
+</body>
+
+</html>
