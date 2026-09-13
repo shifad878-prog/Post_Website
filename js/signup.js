@@ -8,11 +8,13 @@ const client = createClient(supabaseUrl, supabaseKey);
 console.log(client);
 
 const signupForm = document.querySelector("#signupForm");
+const firstName = document.querySelector("#name")
 
-signupForm.addEventListener("submit", async(event) => {
+signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     // 1. Validation 
     if (
+        name.value === "" ||
         email.value === "" ||
         password.value === ""
     ) {
@@ -24,9 +26,14 @@ signupForm.addEventListener("submit", async(event) => {
     try {
 
         const { data, error } = await client.auth.signUp({
+            name: firstName.value,
             email: email.value,
             password: password.value
         });
+
+        const { data: databaseError } = await client
+            .from('user_data')
+            .insert({ name: firstName.value, })
 
         if (error) {
             alert(error.message);
@@ -36,6 +43,8 @@ signupForm.addEventListener("submit", async(event) => {
         alert("Account created successfully!");
 
         console.log(data);
+        // 5. Redirect to dashboard
+        window.location.href = "./dashboard.html";
 
     } catch (error) {
 
@@ -43,4 +52,6 @@ signupForm.addEventListener("submit", async(event) => {
         alert("Something went wrong");
 
     }
+
+
 }); 
