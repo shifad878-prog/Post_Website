@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    
+    <!-- MY POSTS SECTION -->
+    <section class="py-5">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <h1 class="fw-bold text-warning">
+                    My Posts
+                </h1>
+
+                <p class="text-muted">
+                    Manage your published blog posts.
+                </p>
+
+            </div>
+
+
+            <!-- Posts Container -->
+            <div class="row g-4" id="myPostsContainer">
+
+                <!-- Posts will be dynamically added here -->
+
+            </div>
+
+
+            <!-- No Posts Message -->
+            <div id="noPostsMessage" class="text-center d-none">
+
+                <h4 class="text-muted">
+                    No Posts Found
+                </h4>
+
+                <p class="text-muted">
+                    You haven't published any blog posts yet.
+                </p>
+
+                <a href="create-post.html" class="btn btn-warning">
+                    Create Your First Post
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/mypost.js"></script>    
+</body>
+</html>

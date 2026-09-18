@@ -26,14 +26,16 @@ signupForm.addEventListener("submit", async (event) => {
     try {
 
         const { data, error } = await client.auth.signUp({
-            name: firstName.value,
             email: email.value,
             password: password.value
+
         });
 
-        const { data: databaseError } = await client
+        const { data: database } = await client
             .from('user_data')
-            .insert({ name: firstName.value, })
+            .insert({ name: firstName.value,
+                email: email.value
+             })
 
         if (error) {
             alert(error.message);
