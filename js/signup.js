@@ -14,7 +14,7 @@ signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     // 1. Validation 
     if (
-        name.value === "" ||
+        firstName.value === "" ||
         email.value === "" ||
         password.value === ""
     ) {
